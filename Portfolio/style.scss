@@ -1,0 +1,55 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  main {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    display: flex;
+
+    #nav {
+      // border: 2px solid black;
+      position: fixed;
+      width: 8%;
+      height: 100%;
+      background: black;
+      #logo {
+        // border: 2px solid black;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: gray;
+        justify-content: space-between;
+      }
+      p {
+        // border: 2px solid black;
+        text-align: center;
+      }
+
+      #svg {
+        display: flex;
+        justify-content: center;
+        height: 100px;
+        position: relative;
+      }
+
+      svg {
+        height: 100%;
+        display: block;
+        position: absolute;
+      }
+    }
+    #div1 {
+      border: 2px solid black;
+      width: 100%;
+      margin-left: 8%;
+      padding-left: 10px ;
+    }
+  }
+}

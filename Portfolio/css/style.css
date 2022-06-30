@@ -1,0 +1,48 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body main {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  display: flex;
+}
+body main #nav {
+  position: fixed;
+  width: 8%;
+  height: 100%;
+  background: black;
+}
+body main #nav #logo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+  justify-content: space-between;
+}
+body main #nav p {
+  text-align: center;
+}
+body main #nav #svg {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  position: relative;
+}
+body main #nav svg {
+  height: 100%;
+  display: block;
+  position: absolute;
+}
+body main #div1 {
+  border: 2px solid black;
+  width: 100%;
+  margin-left: 8%;
+  padding-left: 10px;
+}
