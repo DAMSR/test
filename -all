@@ -1,0 +1,19 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+#
+# Initial commit
+#
+# Changes to be committed:
+#	new file:   Portfolio/css/style.css
+#	new file:   Portfolio/css/style.min.css
+#	new file:   Portfolio/index.html
+#	new file:   Portfolio/index.php
+#	new file:   Portfolio/script.js
+#	new file:   Portfolio/style.scss
+#	new file:   Portfolio/webfont/Abel-Regular.ttf
+#	new file:   Portfolio/webfont/OFL.txt
+#
+First commit
