@@ -111,9 +111,6 @@ body main #Presentation {
   font-size: 85px;
   margin-left: 50px;
 }
-body main #Presentation .animate__jello {
-  color: aqua;
-}
 body main #Presentation p {
   margin: 0;
   color: white;
@@ -136,15 +133,8 @@ body main #legendePresentation {
   color: white;
 }
 body main #contactMe {
-  border: 1px solid aqua;
-  background-color: #393a3a;
-  width: 220px;
-  height: 60px;
   margin-left: 50px;
   margin-top: 30px;
-  color: aqua;
-  font-size: 24px;
-  text-align: center;
 }
 body main #divScroll {
   display: flex;
@@ -165,4 +155,50 @@ body main #divScroll #scrollLeft {
 }
 body main #divScroll #scrollRight {
   margin-right: 10px;
+}
+
+span {
+  margin: 0;
+}
+
+.animation {
+  display: inline-block;
+}
+
+/* From uiverse.io by @nikk7007 */
+button {
+  padding: 0.8em 1.8em;
+  border: 2px solid #17C3B2;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #17C3B2;
+}
+
+button::before {
+  content: "";
+  width: 0;
+  height: 340%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: aqua;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+button:hover::before {
+  width: 105%;
+}
+
+button:hover {
+  color: #111;
 }

@@ -123,9 +123,6 @@ body {
       font-size: 85px;
       margin-left: 50px;
 
-    .animate__jello{
-        color: aqua;
-      }
       p {
         margin: 0;
         color: white;
@@ -150,16 +147,8 @@ body {
     }
 
     #contactMe {
-      border: 1px solid $colorButtonH2;
-      background-color: #393a3a;
-      width: 220px;
-      height: 60px;
       margin-left: 50px;
       margin-top: 30px;
-
-      color: $colorButtonH2;
-      font-size: 24px;
-      text-align: center;
     }
     #divScroll {
       display: flex;
@@ -182,4 +171,48 @@ body {
       }
     }
   }
+}
+
+span {
+  margin: 0;
+}
+.animation {
+  display: inline-block;
+}
+/* From uiverse.io by @nikk7007 */
+button {
+ padding: 0.8em 1.8em;
+ border: 2px solid #17C3B2;
+ position: relative;
+ overflow: hidden;
+ background-color: transparent;
+ text-align: center;
+ text-transform: uppercase;
+ font-size: 16px;
+ transition: .3s;
+ z-index: 1;
+ font-family: inherit;
+ color: #17C3B2;
+}
+
+button::before {
+ content: '';
+ width: 0;
+ height: 340%;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%) rotate(45deg);
+ background: aqua;
+ transition: .5s ease;
+ display: block;
+ z-index: -1;
+}
+
+button:hover::before {
+ width: 105%;
+}
+
+button:hover {
+ color: #111;
 }
