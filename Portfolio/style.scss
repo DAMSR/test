@@ -1,5 +1,5 @@
 $puceLiHeight: 60px;
-
+$colorButtonH2: aqua;
 html {
   height: 100%;
 }
@@ -8,13 +8,13 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-
+  background-color: #393a3a;
   main {
-    width: 100%;
+    width: 92%;
     position: relative;
-    height: 100%;
+    height: auto;
     display: flex;
-    background-color: #393a3a;
+    flex-direction: column;
 
     #nav {
       // border: 2px solid black;
@@ -22,6 +22,7 @@ body {
       width: 8%;
       height: 100%;
       background: #302f2f;
+      border-right: 2px solid black;
       #logo {
         // border: 2px solid black;
         width: 100%;
@@ -29,8 +30,10 @@ body {
         flex-direction: column;
         background-color: black;
         justify-content: space-between;
+        height: 150px;
         #logoWebDev {
           color: white;
+          margin-bottom: 10px;
         }
       }
       p {
@@ -52,15 +55,32 @@ body {
       }
     }
     #div1 {
-      border: 2px solid black;
       width: 100%;
       margin-left: 8%;
       padding-left: 10px;
       .balise {
         font-family: "Cedarville Cursive", cursive;
-        font-size: 19px;
+        font-size: 15px;
         color: #818181;
+        margin: 0;
       }
+      #baliseBody {
+        margin-left: 15px;
+      }
+      #baliseH1,
+      #baliseH1Fermante {
+        margin-left: 30px;
+      }
+      #baliseP1,
+      #baliseP1Fermante {
+        margin-left: 40px;
+      }
+    }
+
+    #div2 {
+      margin-left: 8%;
+      width: 100%;
+      padding-left: 10px;
     }
 
     ul {
@@ -92,22 +112,70 @@ body {
       }
       #reseau {
         display: flex;
-        justify-content: space-between;
-        border: 1px solid black;
+        justify-content: space-around;
+
         margin-top: 15px;
+        border-right: 1px solid black;
       }
     }
     #Presentation {
       font-family: "Anek Latin", sans-serif;
-      font-size: 100px;
+      font-size: 85px;
       margin-left: 50px;
 
       p {
         margin: 0;
+        color: white;
         span {
           display: flex;
           flex-wrap: nowrap;
         }
+      }
+    }
+    p {
+      margin: 0;
+    }
+    #legendePresentation {
+      font-family: "Abel";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.5em;
+      line-height: 41px;
+      margin-left: 50px;
+      letter-spacing: 0.2em;
+      color: white;
+    }
+
+    #contactMe {
+      border: 1px solid $colorButtonH2;
+      background-color: #393a3a;
+      width: 220px;
+      height: 60px;
+      margin-left: 50px;
+      margin-top: 30px;
+
+      color: $colorButtonH2;
+      font-size: 24px;
+      text-align: center;
+    }
+    #divScroll {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      .scroll {
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        color: white;
+
+        i {
+          color: white;
+        }
+      }
+      #scrollLeft {
+        margin-left: 5px;
+      }
+      #scrollRight {
+        margin-right: 10px;
       }
     }
   }
