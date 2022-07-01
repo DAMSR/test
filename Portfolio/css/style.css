@@ -111,11 +111,14 @@ body main #Presentation {
   font-size: 85px;
   margin-left: 50px;
 }
+body main #Presentation .animate__jello {
+  color: aqua;
+}
 body main #Presentation p {
   margin: 0;
   color: white;
 }
-body main #Presentation p span {
+body main #Presentation p #prenomPresentation {
   display: flex;
   flex-wrap: nowrap;
 }

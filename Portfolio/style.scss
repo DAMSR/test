@@ -123,10 +123,13 @@ body {
       font-size: 85px;
       margin-left: 50px;
 
+    .animate__jello{
+        color: aqua;
+      }
       p {
         margin: 0;
         color: white;
-        span {
+        #prenomPresentation {
           display: flex;
           flex-wrap: nowrap;
         }
